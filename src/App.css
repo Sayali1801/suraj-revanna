@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,600;1,600&family=Raleway:wght@200&display=swap'); 
+*{
+  font-family: 'Figtree', sans-serif;
+  /* overflow-x: hidden; */
+}
