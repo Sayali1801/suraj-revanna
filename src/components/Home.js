@@ -90,7 +90,6 @@ function Home() {
           <section className="revanna-profile-text">
             <h1 id="name">
               {pageLang.home_component.name}
-              {/* Dr.Suraj <br /> Revanna */}
             </h1>
             <h6 id="MLC">{pageLang.home_component.role}</h6>
           </section>

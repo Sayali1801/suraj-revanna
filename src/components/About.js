@@ -19,7 +19,6 @@ function About() {
       <div className="about-text">
         <h1>
         {Lang.about_component.title}
-          {/* <b>A</b>bout Dr.Suraj Revan<b id="last-word">na</b> */}
         </h1>
 
         <p>

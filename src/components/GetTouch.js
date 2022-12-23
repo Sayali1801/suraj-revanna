@@ -19,7 +19,6 @@ function GetTouch() {
       <div className="Get-touch-main">
         <h1 className="touch-main-heading">
         {Lang.GetTouch_component.title}
-          {/* <b id="first-letter">G</b>et In Tou<b id="last-letter">ch</b> */}
         </h1>
         <div className="Get-touch-form">
           <img src={contact} alt="touch-form" className="touch-form-photo" />

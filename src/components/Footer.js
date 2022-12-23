@@ -3,7 +3,20 @@ import header_logo from '../assets/header_logo.png';
 import {FaFacebookF} from 'react-icons/fa';
 import {FaInstagram} from 'react-icons/fa';
 import {FaTwitter} from 'react-icons/fa';
+
+import English from "../English.json";
+import Kannada from "../Kannada.json";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 function Footer() {
+  const curLang= useSelector(state=>state.language.webLanguage);
+  const [Lang,setLang]=useState(English);
+
+  useEffect(()=>{
+    if (curLang === "english") setLang(English)
+    else if (curLang === "kannada") setLang(Kannada)
+  },[curLang])
+
   return (
     <section>
       <div className="footer-main">
@@ -12,9 +25,9 @@ function Footer() {
         </div>
         <div className="footer-center">
           <ul className="center-list">
-            <li>Copyright © <b>2022</b> Suraj Revanna</li>
-            <li> All Rights Reserved.</li>
-            <li>Terms and Conditions | Privacy Policy</li>
+            <li>{Lang.footer_component.copy}</li>
+            <li>{Lang.footer_component.rights}</li>
+            <li>{Lang.footer_component.terms}</li>
           </ul>
         </div>
         <div className="footer-right">

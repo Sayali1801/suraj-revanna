@@ -31,14 +31,12 @@
 
 #MLC {
   font-size: 20px;
-  margin-top: -65px;
   margin-left: 40%;
 }
 
 .revanna-profile img {
   position: relative;
   z-index: 10;
-  left: 20%;
   height: 500px;
   width: 700px;
 }
@@ -105,9 +103,8 @@
 
   #MLC {
     font-size: 18px;
-    margin-top: -45px;
     margin-left: 25%;
-    line-height: 30px;
+    line-height: 70px;
   }
 
   .revanna-profile img {
@@ -137,7 +134,7 @@
 
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 647px) {
   .icons-slideBar {
     display: none;
   }
@@ -157,12 +154,8 @@
     flex-direction: column;
     top: 10%;
   }
-  
-
-
-
   .revanna-profile-text {
-    left: -10%;
+    left:4%;
     margin-top: 10%;
     z-index: 10;
   }
@@ -172,16 +165,43 @@
     font-size: 50px;
     font-weight: 600;
     line-height: 50px;
+    width: 300px;
   }
 
   #MLC {
     font-size: 14px;
-    margin-left: 30%;
-    line-height: 30px;
+    line-height: 40px;
   }
 
   .revanna-profile img {
     height: 400px;
     width: 550px;
   }
+}
+@media screen and (max-width:310px) {
+  .revanna-profile-text {
+    left:25%;
+    margin-top: 10%;
+    z-index: 10;
+  }
+
+
+  #name {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    width: 250px;
+  }
+
+  #MLC {
+    font-size: 12px;
+    line-height: 40px;
+  }
+
+  .revanna-profile img {
+    height: 200px;
+    width: 300px;
+  }
+
+
 }

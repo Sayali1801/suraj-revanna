@@ -98,3 +98,20 @@ input::-webkit-inner-spin-button {
     left: 30%;
   }
 }
+@media only screen and (max-width:360px) {
+  .touch-form {
+    flex: 100%;
+    flex-direction: row;
+    height: 400px;
+  }
+  .touch-form button {
+    height: 40px;
+    border: none;
+    margin-left: 10px;
+  }
+  .Get-touch-form{
+    left: -15%;
+  }
+  
+  
+}

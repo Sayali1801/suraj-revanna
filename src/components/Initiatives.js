@@ -18,12 +18,11 @@ function Initiatives() {
   return (
     <div className="Initiatives-main">
       <h1 className="title">
-        <b id="first-word">In</b>itiativ<b id="last-word">es</b>
+        {Lang.initiatives_component.title}
       </h1>
       <div className="Initives-top">
         <img src={Initiatives1} alt="top-carasoul" id="left-carasoul" />
         <p id="top-text">
-          <h1>{Lang.initiatives_component.title}</h1>
           {Lang.initiatives_component.initiativesFirst}
         </p>
       </div>

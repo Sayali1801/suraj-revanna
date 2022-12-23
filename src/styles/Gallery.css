@@ -57,7 +57,18 @@
   #gallery6 {
     box-shadow: 0px 0px #008080;
   }
-  
-  
-  
+}
+@media screen and (max-width: 310px) {
+  .gallary-main img {
+    margin: 10px 20px 10px 0px;
+    height: 200px;; 
+     width: 200px;
+    border-radius: 5%;
+
+/* for 2 columns view which is not looking good */
+    /* height: 200px;
+    width: 134px;     */
+  }
+
+
 }
