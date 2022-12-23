@@ -1,42 +1,14 @@
 import "../styles/About.css";
 import gallaryPic from "../assets/gallaryPic.JPG";
-import i18n from 'i18next'
 
-import { useTranslation } from "react-i18next";
-import { initReactI18next } from "react-i18next";
-i18n.use(initReactI18next).init({
-  resources:{
-    translation:{
-      "title":"About Dr.Suraj Revanna",
 
-    },
-    kn:{
-      translation:{
-        "title":"ಡಾ .ಸೂರಜ್ ರೇವಣ್ಣ  ಅವರ ಬಗ್ಗೆ",
-
-      } 
-    }
-  },
-  lng:"en",
-  fallbackLng:"en",
-  interpolation:{
-    escapeValue:false
-  }
-
-})
 
 function About() {
-  const{t}=useTranslation();
-
   return (
     <div className="about-main">
       <div className="about-text">
         <h1>
-          {t('title')}
-          {/* <b>A</b>bout Dr.Suraj Revan<b id="last-word">na</b> */}
-        </h1>
-        <h1 className="kannada">
-          {/* <b>ಡಾ .</b>ಸೂರಜ್ ರೇವಣ್ಣ ಅವರ<b id="last-word">ಬಗ್ಗೆ</b> */}
+          <b>A</b>bout Dr.Suraj Revan<b id="last-word">na</b>
         </h1>
 
         <p>
@@ -74,39 +46,6 @@ function About() {
             </p>
           </ul>
         </p>
-        <div className="kannada">
-          <p>
-            ಡಾ. ಸೂರಜ್ ರೇವಣ್ಣ ಅವರು ಹಾಸನ ಜಿಲ್ಲೆಯ ಹೊಳೆನರಸೀಪುರ ಕ್ಷೇತ್ರವನ್ನು
-            ಪ್ರತಿನಿಧಿಸುವ ಕರ್ನಾಟಕ ವಿಧಾನಸಭೆಯ ಸದಸ್ಯರಾಗಿದ್ದಾರೆ. ನವೆಂಬರ್ ೧೯, ೨೦೧೯
-            ರಂದು ಅವರು ಕ್ಷೇತ್ರದ ಸಂಸದರಾಗಿ ಆಯ್ಕೆಯಾದರು. ಅವರ ರಾಜಕೀಯ ಪಕ್ಷ ಜನತಾ ದಳ
-            (ಜಾತ್ಯತೀತ), ಮತ್ತು ಅವರು ಎಚ್‌ಡಿ ದೇವೇಗೌಡ ಕುಟುಂಬದ ಎಂಟನೇ ಸದಸ್ಯರಾಗಿ ರಾಜಕೀಯ
-            ಪ್ರವೇಶಿಸಿದ್ದಾರೆ.
-            <ul>
-              <li>ಶಿಕ್ಷಣ</li>
-              <p>
-                ಅವರು ರಾಜೀವ್ ಗಾಂಧಿ ಆರೋಗ್ಯ ವಿಜ್ಞಾನ ವಿಶ್ವವಿದ್ಯಾಲಯದಿಂದ MBBS
-                (ಎಂಬಿಬಿಎಸ್)ಮತ್ತು(ಎಂ.ಎಸ್) MS (ಜನರಲ್ ಸರ್ಜರಿ) ನಲ್ಲಿ ತಮ್ಮ
-                ಸ್ನಾತಕೋತ್ತರ ಪದವಿಗಳನ್ನು ಪಡೆದರು (ಮೇ ೨೦೧೫)(ಬೆಂಗಳೂರು)
-              </p>
-              <li>ಕುಟುಂಬ</li>
-              <p>
-                ಡಾ ಸೂರಜ್ ರೇವಣ್ಣ ಅವರು ಜೆಡಿ (ಜಾತ್ಯತೀತ) ಸುಪ್ರಿಮೋ ಮತ್ತು ಭಾರತದ ಮಾಜಿ
-                ಪ್ರಧಾನಿ ಎಚ್.ಡಿ. ದೇವೇಗೌಡರ ಮೊಮ್ಮಗ. ಅವರು ಹಾಸನ ಜಿಲ್ಲಾ ಪಂಚಾಯತ್
-                ಸದಸ್ಯರಾಗಿದ್ದ ಭವಾನಿ ರೇವಣ್ಣ ಮತ್ತು ಕರ್ನಾಟಕ ರಾಜ್ಯದ ಲೋಕೋಪಯೋಗಿ ಇಲಾಖೆ
-                ಮಾಜಿ ಸಚಿವರಾಗಿದ್ದ ಹೆಚ್.ಡಿ.ರೇವಣ್ಣ ಅವರ ಪುತ್ರ. ಸಾಗರಿಕಾ ರಮೇಶ್ ಅವರನ್ನು
-                ಮದುವೆಯಾಗಿದ್ದಾರೆ ಕರ್ನಾಟಕದ ಮಾಜಿ ಮುಖ್ಯಮಂತ್ರಿ, ಎಚ್.ಡಿ.ಕುಮಾರಸ್ವಾಮಿ
-                ಅವರ ಚಿಕ್ಕಪ್ಪ ಮತ್ತು ಸೂರಜ್ ಅವರ ಕಿರಿಯ ಸಹೋದರ ಪ್ರಜ್ವಲ್ ರೇವಣ್ಣ ಅವರು
-                ಹಾಸನ ಕ್ಷೇತ್ರದಿಂದ ೧೭ ನೇ ಲೋಕಸಭೆಯ ಸದಸ್ಯರಾಗಿದ್ದಾರೆ.
-              </p>
-              <li>ರಾಜಕೀಯ ವೃತ್ತಿಜೀವನ</li>
-              <p>
-                ಕರ್ನಾಟಕ ವಿಧಾನ ಪರಿಷತ್ತಿಗೆ ನಡೆದ ಚುನಾವಣೆಯಲ್ಲಿ ಸೂರಜ್ ರೇವಣ್ಣ ಅವರ
-                ಗೆಲುವು ಚುನಾವಣಾ ರಾಜಕೀಯದಲ್ಲಿ ಹೊಸ ಮೈಲಿಗಲ್ಲು ಸ್ಥಾಪಿಸಿದೆ. ವಿಧಾನಮಂಡಲದ
-                ನಾಲ್ಕೂ ಸದನಗಳಲ್ಲಿ ಜೆಡಿಎಸ್‌ನ ಮೊದಲ ಕುಟುಂಬ ಈಗ ಅಸ್ತಿತ್ವದಲ್ಲಿದೆ.
-              </p>
-            </ul>
-          </p>
-        </div>
       </div>
       <div className="about-img">
         <img src={gallaryPic} alt="front1" id="about-photo" />
