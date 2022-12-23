@@ -1,48 +1,41 @@
 import "../styles/About.css";
 import gallaryPic from "../assets/gallaryPic.JPG";
-
-
+import English from "../English.json";
+import Kannada from "../Kannada.json";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
 
 function About() {
+  const curLang= useSelector(state=>state.language.webLanguage);
+  const [Lang,setLang]=useState(English);
+
+  useEffect(()=>{
+    if (curLang === "english") setLang(English)
+    else if (curLang === "kannada") setLang(Kannada)
+  },[curLang])
+  
   return (
     <div className="about-main">
       <div className="about-text">
         <h1>
-          <b>A</b>bout Dr.Suraj Revan<b id="last-word">na</b>
+        {Lang.about_component.title}
+          {/* <b>A</b>bout Dr.Suraj Revan<b id="last-word">na</b> */}
         </h1>
 
         <p>
-          Dr. Suraj Revanna is a member of the Karnataka Legislative Assembly,
-          representing the Holenarasipura constituency in Hassan district. He
-          was elected as the constituency's MP on November 19, 2019. His
-          political party is the Janata Dal (Secular), and he is the eighth
-          member of the H.D Devegowda family to enter politics.
+          {Lang.about_component.info}
           <ul>
-            <li> Education</li>
+            <li> {Lang.about_component.education}</li>
             <p>
-              He received his postgraduate degrees from Rajiv Gandhi University
-              of Health Science in MBBS and MS (General Surgery) (May 2015)
-              (Bangalore)
+            {Lang.about_component.educationDetail}
             </p>
-            <li>Family</li>
+            <li>{Lang.about_component.family}</li>
             <p>
-              Dr Suraj Revanna is the grandson of JD (Secular) Supremo and
-              former Prime Minister of India H. D. Deve Gowda. He is son of
-              Bhavani Revanna who was the member of the Hassan Zilla Panchayat,
-              and HD Revanna who was former Minister for Public Works Department
-              in Karnataka state. He is married to Sagarika Ramesh.
+            {Lang.about_component.familyDetails}
             </p>
+            <li>{Lang.about_component.politicalCarrier} </li>
             <p>
-              Former Chief Minister of Karnataka, H. D. Kumaraswamy is his uncle
-              and Suraj's younger brother Prajwal Revanna is the member of the
-              17th Lok Sabha from Hassan Constituency
-            </p>
-            <li>Political career </li>
-            <p>
-              Suraj Revanna's victory in the elections to the Karnataka
-              Legislative Council has set a new milestone in electoral politics.
-              The JD(S) first family now has a presence in all four Houses of
-              the legislature.
+            {Lang.about_component.politicalDetails}
             </p>
           </ul>
         </p>

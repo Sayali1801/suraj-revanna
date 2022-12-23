@@ -3,23 +3,27 @@ import InitiativesPhoto from "../assets/InitiativesPhoto.JPG";
 import touch_poster from "../assets/touch-_poster.JPG";
 import new2 from "../assets/new2.png";
 import news3 from "../assets/news3.png";
-import { useState } from "react";
+import English from "../English.json";
+import Kannada from "../Kannada.json";
+import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+
 function Press() {
-  const [extra, setExtra] = useState("extra-news");
-  function extraNews() {
-    // setExtra(btn?<span/>:<span/>)
-  }
+  const curLang = useSelector((state) => state.language.webLanguage);
+  const [Lang, setLang] = useState(English);
+
+  useEffect(() => {
+    if (curLang === "english") setLang(English);
+    else if (curLang === "kannada") setLang(Kannada);
+  }, [curLang]);
+
   return (
     <div className="press-main">
       <h1>
-        <b id="first-letter">N</b>ew<b id="last-word">s</b>
+        {Lang.News_component.title}
+        {/* <b id="first-letter">N</b>ew<b id="last-word">s</b> */}
       </h1>
-      <p>
-        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-        officia deserunt mollit anim id est laborum.agna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.
-      </p>
+      <p>{Lang.News_component.description}</p>
       <div className="img-main">
         <div>
           <img src={touch_poster} alt="news-1" className="news-1" />
@@ -28,9 +32,7 @@ function Press() {
             target="_blank"
             rel="noreferrer"
           >
-            <p>
-              Dr.Suraj Revanna Cup 3.0 Trophy Launch Event on 6th December 2022
-            </p>
+            <p>{Lang.News_component.first} </p>
           </a>
         </div>
 
@@ -42,14 +44,13 @@ function Press() {
             rel="noreferrer"
           >
             <p>
-              First family of politics: JD(S) has a presence in every House in
-              Karnataka, India
+            {Lang.News_component.second}
             </p>
           </a>
         </div>
 
         <div className="read-more-btn">
-          <p onClick={extra}>Read More ︾</p>
+          <p>Read More ︾</p>
         </div>
         <div className="extra-news">
           <img src={news3} alt="news-1" className="news-3" />
@@ -58,7 +59,7 @@ function Press() {
             target="_blank"
             rel="noreferrer"
           >
-            <p>Dr.Suraj Revanna files papers</p>
+            <p>{Lang.News_component.third}</p>
           </a>
         </div>
         <div className="extra-news">
@@ -69,8 +70,7 @@ function Press() {
             rel="noreferrer"
           >
             <p>
-              Dr. Suraj Revanna Wins from over 1000 votes In Hassan | karnataka
-              MLC Election Results 2021
+            {Lang.News_component.fourth}
             </p>
           </a>
         </div>
@@ -82,8 +82,7 @@ function Press() {
             rel="noreferrer"
           >
             <p>
-              Ex-PM Devegowda's grandson Suraj Revanna enters politics, files
-              nomination for MLC election
+            {Lang.News_component.fifth}
             </p>
           </a>
         </span>
@@ -95,8 +94,7 @@ function Press() {
             rel="noreferrer"
           >
             <p>
-              Kumaraswamy announces Dr. Suraj Revanna as MLC candidate from
-              Hassan
+            {Lang.News_component.sixth}
             </p>
           </a>
         </span>

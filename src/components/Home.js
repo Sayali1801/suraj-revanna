@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import anna from "../assets/anna.png";
 import "../styles/Home.css";
 import About from "../components/About";
@@ -6,18 +7,27 @@ import Gallery from "./Gallery";
 import Initiatives from "./Initiatives";
 import GetTouch from "./GetTouch";
 import Footer from "./Footer";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { useEffect } from "react";
+import English from "../English.json";
+import Kannada from "../Kannada.json";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useSelector } from "react-redux";
 
 function Home() {
+  const curLang= useSelector(state=>state.language.webLanguage);
+  console.log(curLang)
+  const [pageLang, setPageLang] = useState(English)
+  
   useEffect(() => {
     AOS.init({ duration: 3000 });
-  }, []);
+
+    if (curLang === "english") setPageLang(English)
+    else if (curLang === "kannada") setPageLang(Kannada)
+    
+  }, [curLang]);
+
   useEffect(() => {
     let hom = document.querySelector(".Home-main");
     window.addEventListener("scroll", () => {
@@ -34,6 +44,7 @@ function Home() {
       }
     });
   }, []);
+
   return (
     <div>
       <div className="wrapper">
@@ -71,21 +82,22 @@ function Home() {
               <li id="line">
                 <hr />
               </li>
-              <li id="social_name">SOCIALS</li>
+              <li id="social_name">{pageLang.home_component.socials}</li>
             </ul>
           </div>
         </div>
         <div className="revanna-profile" data-aos="zoom-in">
           <section className="revanna-profile-text">
             <h1 id="name">
-              Dr.Suraj <br /> Revanna
+              {pageLang.home_component.name}
+              {/* Dr.Suraj <br /> Revanna */}
             </h1>
-            <h6 id="MLC">MLC Hassan District</h6>
+            <h6 id="MLC">{pageLang.home_component.role}</h6>
           </section>
           <img src={anna} alt="suraj revanna" />
         </div>
       </div>
-      
+
       {/* sections */}
       <About />
       <Press />

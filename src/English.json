@@ -1,56 +1,56 @@
 {
-    "navbar":{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "press": "Press",
+    "gallery": "Gallery",
+    "initiatives": "Initiatives",
+    "getInTouch": "Get In Touch"
+  },
+  "home_component": {
+    "socials": "SOCIALS ",
+    "name": "Dr. Suraj Revanna",
+    "role": "MLC Hassan District"
+  },
+  "about_component": {
+    "title": "About Dr.Suraj Revanna",
+    "info": "Dr. Suraj Revanna is a member of the Karnataka Legislative Assembly, representing the Holenarasipura constituency in Hassan district. He was elected as the constituency's MP on November 19, 2019. His political party is the Janata Dal (Secular), and he is the eighth member of the H.D Devegowda family to enter politics.",
+    "education": "Education",
+    "educationDetail": "He received his postgraduate degrees from Rajiv Gandhi University of Health Science in MBBS and MS (General Surgery) (May 2015) (Bangalore)",
+    "family": "Family",
+    "familyDetails": "Dr Suraj Revanna is the grandson of JD (Secular) Supremo and former Prime Minister of India H. D. Deve Gowda. He is son of Bhavani Revanna who was the member of the Hassan Zilla Panchayat, and HD Revanna who was former Minister for Public Works Department in Karnataka state. He is married to Sagarika Ramesh.Former Chief Minister of Karnataka, H. D. Kumaraswamy is his uncle and Suraj's younger brother Prajwal Revanna is the member of the 17th Lok Sabha from Hassan Constituency",
+    "politicalCarrier": "Political Career",
+    "politicalDetails": "Suraj Revanna's victory in the elections to the Karnataka Legislative Council has set a new milestone in electoral politics. The JD(S) first family now has a presence in all four Houses of the legislature."
+  },
+  "News_component": {
+    "title":"News",
+    "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "first": "Dr.Suraj Revanna Cup 3.0 Trophy Launch Event on 6th December 2022",
+    "second": "First family of politics: JD(S) has a presence in every House in Karnataka, India",
+    "third": "Dr.Suraj Revanna files papers",
+    "fourth": "Dr. Suraj Revanna Wins from over 1000 votes In Hassan | karnataka MLC Election Results 2021",
+    "fifth": "Ex-PM Devegowda's grandson Suraj Revanna enters politics, files nomination for MLC election",
+    "sixth": "Kumaraswamy announces Dr. Suraj Revanna as MLC candidate from Hassan"
+  },
+  "Gallery_component": {
+    "title": "Gallery"
+  },
+  "initiatives_component": {
+    "title": "Initiatives",
+    "initiativesFirst": " Dr. Suraj Revanna Cup 3.0 Trophy Launching Program organized by Suraj Revanna Sports and Culture Association at Lalitha Mahal premises, Mysore was discussed at length in the meeting. Talents sports academy, specialized in all games, helps in inducing,improvising and intelligently driving the passion towards game. With the involvement shown by students, participants and players, Talents sports academy transforms people to excel in their fields. Be it involved in sports, We at talent sports take the utmost care to bring out the best in people. We provide the best in class infrastructure, highly standardized guidelines and flexible timing for the courses we involved in sports, We at talent sports take the utmost care to bring out the best in people. We provide the best in class infrastructure,highly standardized guidelines and flexible timing for the courses we"
+  },
 
-        "home":"Home",
-        "about":"About",
-        "press":"Press",
-        "gallery":"Gallery",
-        "initiatives":"Initiatives",
-        "getInTouch":"Get In Touch"
-    },
-    "home_component":{
-        "socials":"SOCIALS ",
-        "name":"Dr. Suraj Revanna",
-        "role":"MLC Hassan District"
-    },
-    "about_component":{
-        "title":"About Dr.Suraj Revanna",
-        "info":"Dr. Suraj Revanna is a member of the Karnataka Legislative Assembly, representing the Holenarasipura constituency in Hassan district. He was elected as the constituency's MP on November 19, 2019. His political party is the Janata Dal (Secular), and he is the eighth member of the H.D Devegowda family to enter politics.",
-        "education":"Education",
-        "educationDetail":"He received his postgraduate degrees from Rajiv Gandhi University of Health Science in MBBS and MS (General Surgery) (May 2015) (Bangalore)",
-        "family":"Family",
-        "familyDetails":"Dr Suraj Revanna is the grandson of JD (Secular) Supremo and former Prime Minister of India H. D. Deve Gowda. He is son of Bhavani Revanna who was the member of the Hassan Zilla Panchayat, and HD Revanna who was former Minister for Public Works Department in Karnataka state. He is married to Sagarika Ramesh.Former Chief Minister of Karnataka, H. D. Kumaraswamy is his uncle and Suraj's younger brother Prajwal Revanna is the member of the 17th Lok Sabha from Hassan Constituency",
-        "politicalCarrier":"Political Career",
-        "politicalDetails":"Suraj Revanna's victory in the elections to the Karnataka Legislative Council has set a new milestone in electoral politics. The JD(S) first family now has a presence in all four Houses of the legislature."
-    },
-    "News_component":{
-        "description":"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.agna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        "first":"Dr.Suraj Revanna Cup 3.0 Trophy Launch Event on 6th December 2022",
-        "second":"First family of politics: JD(S) has a presence in every House in Karnataka, India",
-        "third":"Dr.Suraj Revanna files papers",
-        "fourth":"Dr. Suraj Revanna Wins from over 1000 votes In Hassan | karnataka MLC Election Results 2021",
-        "fifth":"Ex-PM Devegowda's grandson Suraj Revanna enters politics, files nomination for MLC election",
-        "sixth":"Kumaraswamy announces Dr. Suraj Revanna as MLC candidate from Hassan"
-    },
-    "Gallery_component":{
-        "title":"Gallery"
-    },
-    "initiatives_component":{
-        "title":"Initiatives",
-        "initiativesFirst":" Dr. Suraj Revanna Cup 3.0 Trophy Launching Program organized by Suraj Revanna Sports and Culture Association at Lalitha Mahal premises, Mysore was discussed at length in the meeting. Talents sports academy, specialized in all games, helps in inducing,improvising and intelligently driving the passion towards game. With the involvement shown by students, participants and players, Talents sports academy transforms people to excel in their fields. Be it involved in sports, We at talent sports take the utmost care to bring out the best in people. We provide the best in class infrastructure, highly standardized guidelines and flexible timing for the courses we involved in sports, We at talent sports take the utmost care to bring out the best in people. We provide the best in class infrastructure,highly standardized guidelines and flexible timing for the courses we"
-    },
-
-    "GetTouch_component":{
-        "title":"Get In Touch",
-        "name":"Hey, Tell your name",
-        "email":"Whta's your mail ID",
-        "number":"Your Number?",
-        "message":"Message",
-        "submit":"Submit "
-    },
-    "footer_component":{
-        "copy":"Copyright © <b>2022</b> Suraj Revanna",
-        "rights":"All Rights Reserved.",
-        "terms":"Terms and Conditions | Privacy Policy"
-    }
+  "GetTouch_component": {
+    "title": "Get In Touch",
+    "name": "Hey, Tell your name",
+    "email": "Whta's your mail ID",
+    "number": "Your Number?",
+    "message": "Message",
+    "submit": "Submit "
+  },
+  "footer_component": {
+    "copy": "Copyright © <b>2022</b> Suraj Revanna",
+    "rights": "All Rights Reserved.",
+    "terms": "Terms and Conditions | Privacy Policy"
+  }
 }

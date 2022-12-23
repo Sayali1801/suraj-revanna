@@ -4,12 +4,20 @@ import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import header_logo from "../assets/header_logo.png";
+import { toEnglish,toKannada } from "./store/langSlice";
+import { useDispatch, useSelector } from "react-redux";
 
-function Header() {
+function Header(props) {
+  // const curLang= useSelector(state=>state.language);
+  const dispatch=useDispatch();
+
   const [click, setClick] = useState(false);
-  function handleClick() {
-    setClick(!click);
-  }
+
+  const handleClick = (arg) => {
+    if(arg==="english") props.langfunc("english");
+    else if(arg==="kannada") props.langfunc("kannada");
+  };
+
   return (
     <div className="header">
       <div className="header-main">
@@ -40,10 +48,13 @@ function Header() {
             </Link>
             <div className="header-right">
               <Link to="/Touch">
-                <li>
-                  <button>Get In Touch</button>
-                </li>
+
               </Link>
+              <li>
+                  <button>Get In Touch</button>
+                  <button onClick={()=>dispatch(toEnglish())}>English</button>
+                  <button onClick={()=>dispatch(toKannada())}>Kannada</button>
+                </li>
             </div>
           </ul>
         </div>

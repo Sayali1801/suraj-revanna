@@ -8,16 +8,25 @@ import Initiatives from "./components/Initiatives";
 import GetTouch from "./components/GetTouch";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 function App() {
-  
+  const [appLanguage,setAppLanguage]=useState("english");
+
+  const changeLanguage=(lang)=>{
+    setAppLanguage(lang);
+    console.log("clickappjs")
+    console.log("----"+appLanguage)
+  }
+
   return (
     <>
       <BrowserRouter>
         <div className="App">
-          <Header />
+        {console.log("app js****")}
+          <Header  langfunc={changeLanguage} webLang={appLanguage}/>
           <Routes>
-            <Route path="/" exact element={<Home />} />
+            <Route path="/" exact element={<Home webLang={appLanguage} />} />
             <Route path="/About" exact element={<About />} />
             <Route path="/Press" exact element={<Press />} />
             <Route path="/Gallery" exact element={<Gallery />} />
