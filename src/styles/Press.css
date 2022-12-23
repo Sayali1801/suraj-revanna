@@ -1,5 +1,5 @@
 .press-main{
-    padding: 20px 0px 0px 100px ;
+    padding: 50px 0px 0px 100px ;
 }
 #first-letter{
     text-decoration-line:underline;
@@ -14,6 +14,9 @@
 .press-main p{
     text-align: left;
     width: 90%;
+}
+.kanadda{
+    display: none;
 }
 
 
@@ -71,7 +74,7 @@ margin-top: -30px;
                 cursor: pointer;
             }
             .extra-news{
-                display: none;
+                /* display: none; */
             }
             #more-extra-news{
                 display:flex;

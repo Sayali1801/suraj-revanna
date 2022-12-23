@@ -19,8 +19,7 @@ function Footer() {
         </div>
         <div className="footer-right">
           <ul className="right-list">
-          <a href="https://twitter.com/Dr_Surajrevanna" target="_blank" rel="noreferrer"
->
+          <a href="https://twitter.com/Dr_Surajrevanna" target="_blank" rel="noreferrer">
 
             <li id="twitter"><FaTwitter/></li>
             </a>

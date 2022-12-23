@@ -52,6 +52,9 @@
   list-style: none;
   padding: 20px;
 }
+.sider a{
+  color: black;
+}
 
 .icon {
   font-size: 25px;
@@ -70,6 +73,17 @@
   transform: rotate(90deg);
   padding-top: 75px;
   margin-top: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+#twitter:hover{
+  color:rgb(5, 117, 202);
+}
+#insta:hover{
+  color: rgb(146, 5, 146);
+}
+#facebook:hover{
+  color: rgb(9, 9, 116);
 }
 
 @media screen and (max-width: 940px) {
@@ -101,6 +115,26 @@
     height: 400px;
     width: 550px;
   }
+}
+@media screen and (max-width: 1050px) {
+
+  .icon {
+    font-size: 17px;
+    padding-top: 13px;
+  }
+  .revanna-profile-text {
+    left: 10%;
+    margin-top: -13%;
+    z-index: 10;
+  }
+
+  .revanna-profile img {
+    left: 0%;
+    height: 400px;
+    width: 550px;
+  }
+
+
 }
 
 @media screen and (max-width: 640px) {

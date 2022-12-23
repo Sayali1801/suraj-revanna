@@ -4,7 +4,7 @@
   position: relative;
   z-index: -1;
   background-size: contain;
-  padding: 10px 0px 70px 100px;
+  padding: 50px 0px 70px 100px;
 }
 
 .Get-touch-form {
@@ -90,20 +90,11 @@ input::-webkit-inner-spin-button {
   text-underline-offset: 5px;
 }
 
-@media screen and (max-width: 640px) {
-  .Get-touch-form {
-    left: -5%;
-  }
-
+@media only screen and (max-width: 940px) {
   .touch-form-photo {
     display: none;
   }
-  
-
-
-
-
-
-
-
+  .submit-btn{
+    left: 30%;
+  }
 }
